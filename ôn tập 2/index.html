@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Danh sách sinh viên</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6" >
+                <div class="row">
+                    <h3 class="h3_down">Form thêm mới</h3>
+                    <i class="fa-solid fa-chevron-down mt-2 ml-3 icon-close"></i>
+                </div>
+                <form action="" method="post" name="stdForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Code</label>
+                                <input type="text" name="code" class="form-control" placeholder="Enter Code">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Enter phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" name="email" class="form-control" placeholder="Enter email">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="">Address</label>
+                                <input type="text" name="address" class="form-control" placeholder="Enter address">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="text" name="password" class="form-control" placeholder="Enter password">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="btn btn-primary btn-lg">Thêm mới</button>
+        
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h3 class="h3-down">Form chỉnh sửa</h3>
+                    <i class="fa-solid fa-chevron-down mt-2 ml-3 icon-closeE"></i>
+                </div>
+                <form action="" method="post" name="stdFormEdit">
+                    <input type="hidden" name="id">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Code</label>
+                                <input type="text" name="code" class="form-control" placeholder="Enter Code">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Enter phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" name="email" class="form-control" placeholder="Enter email">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="">Address</label>
+                                <input type="text" name="address" class="form-control" placeholder="Enter address">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="text" name="password" class="form-control" placeholder="Enter password">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="btn btn-primary btn-lg">sửa</button>
+        
+                </form>
+            </div>
+        </div>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Password</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbodyList">
+
+            </tbody>
+        </table>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

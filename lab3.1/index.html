@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Danh sách sinh viên</h2>
+        <hr>
+        <form action="" method="POST" class="form-inline">
+            <div class="form-group">
+                <input class="form-control" placeholder="Tìm theo điểm TB" id="input_marks">
+            </div>
+            <button type="button" class="btn btn-primary" id="btn_filter">Lọc điểm</button>
+            <button type="button" class="btn btn-success ml-2" onclick="sort_markAvg('')">Mặc định</button>
+            <button type="button" class="btn btn-success" onclick="sort_markAvg('ASC')">Điểm TB tăng dần</button>
+            <button type="button" class="btn btn-success" onclick="sort_markAvg('DESC')">Điểm TB giảm dần</button>
+        </form>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Toán</th>
+                    <th>Lý</th>
+                    <th>Hóa</th>
+                    <th>Đ.TB</th>
+                    <th>Xếp loại</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- file code.js sau khi biên dịch -->
+    <script src="app.js"></script>
+</body>
+
+</html>
